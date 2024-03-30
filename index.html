@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Navbar</title>
+    <style>
+        nav a {
+            float: right;
+            display: block;
+            color: rgb(29, 8, 122);
+            text-align: center;
+            padding: 16px 25px;
+            text-decoration: double;
+        }
+
+        nav a:hover {
+            background-color: rgb(60, 4, 112);
+            color: blanchedalmond;
+
+        }
+
+        form,
+        h1 {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#register">REGISTER </a>
+        <a href="signup.html" target="_blank">SIGN UP</a>
+        <a href="lists.html" target="_blank">BOOK</a>
+        <a href="table.html" target="_blank">MENU</a>
+        <a href="scripts.html" target="_blank">SCRIPTS</a>
+        <a href="project.html" target="_blank">PROJECT</a>
+        <a href="about.html" target="_blank">ABOUT HTML</a>
+        <img src="Images/htmlbg.webp" height="800" width="1600">
+    </nav>
+
+
+
+    <img id="register" src="Images/Smitlogo.jpeg" alt="Smitlogo" title="Smitlogo" width="300px" height="200px">
+    <u>
+        <h1>
+            REGISTRATION FORM
+        </h1>
+    </u>
+    <form action="/registration_form.php" method="post">
+        <b>USER NAME:</b><br>
+        <input type="text" name="username" value="full name" size="30" />
+        <br>
+        <br>
+        <b>Email:</b><br>
+        <input type="email" name="my email" value="gmail id" size="30" />
+        <br>
+        <br>
+        <b>Password:</b><br>
+        <input type="password" name="password" value="8 characters" size="30" />
+        <br>
+        <br>
+        <b>Confirm Password:</b><br>
+        <input type="password" name="password" value="8 characters" size="30" />
+        <br>
+        <br>
+        <b>Date of Birth:</b><br>
+        <input type="date" name="DOB" size="30" />
+        <br>
+        <br>
+        <b>Gender:</b><br>
+        <input type="radio" name="Gender" value="Male" /> Male
+        <input type="radio" name="Gender" value="Female" /> Female
+        <input type="radio" name="Gender" value="others" /> Others
+        <br>
+        <br>
+        <b>Insert your Photo:</b><br>
+        <input type="file" name="choose file" />
+        <br>
+        <br>
+        <b>Insert your resume:</b><br>
+        <input type="file" name="choose file" />
+        <br>
+        <br>
+        <b>Security Question:</b><br>
+        <select>
+            <option value="select" selected>select here</option>
+            <option value="what is your uncle name?">What is your uncle name?</option>
+            <option value="what is the name of your first pet?">What is the name of your first pet?</option>
+            <option value="what city were you born in?">What city were you born in?</option>
+        </select>
+        <br>
+        <br>
+        <b>Answer:</b><br>
+        <input type="text" name="Security answer" placeholder="your answer" size="30" />
+        <br>
+        <br>
+        <input type="checkbox" name="agreement" />I agree with the terms and conditions.
+        <br>
+        <br>
+        <input type="submit" name="registerbtn" value="Register" />
+        <br>
+        <br>
+        <b>Already have an account?</b>
+        <a href="signup.html">SIGN IN</a>
+
+
+    </form>
+
+
+
+</body>
+
+</html>

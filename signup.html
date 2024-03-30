@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <style>
+        body {
+            background-image: url(Images/signupbg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        fieldset {
+            margin-right: 1000px;
+        }
+
+        .button {
+            border: 1px solid black;
+            text-decoration: none;
+            padding: 5px;
+            font-size: 20px;
+            color: rgb(84, 18, 206);
+            background-color: blanchedalmond;
+        }
+
+        .button:hover {
+            background-color: rgb(29, 29, 110);
+
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">BACK TO HOME</a>
+    <form action="/submit_forms.php" method="post">
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <br>
+            EDUCATION
+            <br>
+            <br>
+
+            <select>
+                <option value="select" selected>select here</option>
+                <option value="Matric">Matric</option>
+                <option value="F.A">F.A</option>
+                <option value="F.SC">F.SC</option>
+                <option value="M.A">M.A</option>
+                <option value="M.SC">M.SC</option>
+            </select>
+            <br>
+            <br>
+            First name: <input type="text" name="Firstname" size="20" maxlength="30" />
+            <br>
+            <br>
+            Last name: <input type="text" name="Lastname" size="20" maxlength="30" />
+            <br>
+            <br>
+            Gender: <input type="radio" name="Gender" value="Male"> Male
+            <input type="radio" name="Gender" value="Female"> Female
+            <br>
+            <br>
+            Email: <input type="email" name="my email" width="20" maxlength="30" />
+            <br>
+            <br>
+            Contact no: <input type="number" name="my contact" size="20" maxlength="30" />
+            <br>
+            <br>
+            Date of Birth: <input type="date" name="DOB" />
+            <br>
+            <br>
+            Address:
+            <br>
+            <textarea name="address" cols="30" rows="5">Write here</textarea>
+            <br>
+            <br>
+            Courses:
+            <br>
+            <br>
+            <select>
+                <option value="select" selected>select here</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+            <br>
+            <br>
+            Marital Status:
+            <input type="checkbox" name="marital status" value="Married"> Married
+            <input type="checkbox" name="marital status" value="Un Married"> Un Married
+            <br>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+            <br>
+            <br>
+            <b>OR</b>
+            <br>
+            <br>
+            <a href="index.html"class="button">Register Now</a>
+            
+
+        </fieldset>
+    </form>
+
+
+
+</body>
+
+</html>
